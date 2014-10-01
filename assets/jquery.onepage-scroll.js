@@ -8,7 +8,7 @@
  * one page at a time
  *
  * Credit: Eike Send for the awesome swipe event
- * https://github.com/peachananr/onepage-scroll
+ * https://github.com/peachananr/onepage-scroll ok
  * 
  * License: GPL v3
  *

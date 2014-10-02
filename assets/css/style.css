@@ -1,0 +1,147 @@
+body, html {
+  margin:0;
+  font-size: 1em;
+  line-height: 1.4;
+  color: #5b5b5b;
+  font-family: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+body {
+  background: grey;
+}
+#fixed_header {
+  height:100px;
+  width:100%;
+  position:fixed;
+  top:0;
+  z-index:100;
+  box-shadow: 0px 0px 5px;
+}
+#header {
+  position:relative;
+  background:white;
+  height:100%;
+  width:100%;
+}
+#hdr {
+  height:100%;
+  width:150px;
+  background:black;
+  position:absolute;
+  left:0px;
+}
+#hdr_title {
+  height:50px;
+  text-align:center;
+  font-size:2.3em;
+  position:absolute;
+  padding-top:25px;
+  left:180px;
+}
+#initials {
+  font-size:2.3em;
+  padding-top:25px;
+  color:#0099FF;
+  text-align:center;
+
+}
+#main {
+  position:fixed;
+  top:50px;
+}
+.key {
+  width:100%;
+  z-index:-5;
+}
+#first_box {
+  position:relative;
+  display:inline-block;
+  width:100%;
+  background:rgba(0,0,0,.8);
+  color:white;
+}
+#first_box:after {
+    padding-top: 65%;
+    display: block;
+    content: '';
+}
+#welcome {
+  position: absolute;
+  top: 100px; right: 50%;
+  font-weight:300;
+  font-size:4em;
+  color:rgba(255,255,255,0.9);
+}
+.container {
+  margin-top:-5px;
+  position:relative;
+  width:100%;
+}
+#aboutbox {
+  background:white;
+  height:500px;
+}
+#about {
+  text-align:center;
+  font-size:300%;
+  padding:50px 0px;
+  font-weight:300;
+}
+hr {
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  border-top: 1px solid #8b8b8b;
+  margin: 0 auto 50px auto;
+  max-width: 400px;
+  position: relative;
+  display: block;
+}
+hr:after {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  content: "";
+  bottom: -5px;
+  left: 50%;
+  margin-left: -5px;
+  background-color: #8b8b8b;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+#aboutme {
+
+}
+#expbox {
+  background:black;
+  height:400px;
+  color:white;
+}
+#exp {
+  text-align:center;
+  font-size:200%;
+}
+#expme {
+
+}
+
+@media (max-width: 1200px) {
+    #fixed_header {
+      height:50px;
+    }
+    #hdr {
+      width:100px;
+    }
+    #initials {
+      padding-top:0px;
+    }
+    #hdr_title {
+      font-size:1em;
+      padding-top:14px;
+      left:120px;
+    }
+
+
+}

@@ -1,9 +1,0 @@
-#header {
-  background:white;
-  
-
-}
-#test {
-  border:black 1px solid;
-  background:grey;
-}

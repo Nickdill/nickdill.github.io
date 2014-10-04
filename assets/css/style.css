@@ -93,6 +93,23 @@ a:active {
   color:#3498DB;
   transition:.3s;
 }
+.mobile_menu {
+  position:absolute;
+  display:none;
+  right:0px;
+  top:50px;
+  background:white;
+}
+.m_menu {
+  text-align:center;
+  font-weight:300;
+  padding:10px 20px;
+
+}
+.m_menu:hover {
+  background:#3498DB;
+  color:white;
+}
 #main {
   position:fixed;
   top:50px;
@@ -154,7 +171,16 @@ a:active {
   background: #3498DB;
   border-radius:5px;
 }
-.download:hover, .download2:hover {
+.download3 {
+  text-align:center;
+  margin: 50px auto;
+  width:100px;
+  padding:15px;
+  background: #3498DB;
+  border-radius:5px;
+  color:white;
+}
+.download:hover, .download2:hover, .download3:hover {
   cursor:pointer;
   background:#2980B9;
   transistion:.5s;
@@ -283,14 +309,17 @@ hr:after {
 }
 .jobbox {
   background:#34495E;
-  height:90px;
   padding:0px 30px;
   margin:20px auto;
+  border-radius:3px;
 }
 .jobbox:hover {
   background:#3498DB;
 }
-.job1 {
+.jobinfo {
+  display:none;
+}
+.job {
   height:90px;
 }
 .self {
@@ -301,14 +330,30 @@ hr:after {
   width:200px;
   border-radius:200px;
   border:3px solid white;
+  transition:.5s;
+}
+.selfpic:hover {
+  width:200px;
+  border-radius:10px;
+  border:3px solid white;
+  transition:.5s;
 }
 #footer {
   background:#ECF0F1;
   padding-bottom:20px;
   color:#BDC3C7;
 }
-#resume {
-  margin-top:100px;
+.resume {
+  position:absolute;
+  color:#2c3e50;
+  text-align:center;
+  padding:100px 0px;
+  left:50%;
+  margin: 100px 0px 0px -200px;
+  width:400px;
+  height:200px;
+  background:#bdc3c7;
+  border-radius:5px;
 }
 
 @media (max-width: 1200px) {

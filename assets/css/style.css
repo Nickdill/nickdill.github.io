@@ -283,6 +283,12 @@ hr:after {
   text-align:center;
   margin:0px 20px;
 }
+.text1 {
+  float:left;
+  text-align:center;
+  width:100%;
+  margin-top:-30px;
+}
 #expbox {
   background:#34495E;
   color:white;
@@ -313,14 +319,31 @@ hr:after {
   margin:20px auto;
   border-radius:3px;
 }
+.projbox {
+  background:#3498DB;
+  padding:0px 30px;
+  margin:20px auto;
+}
 .jobbox:hover {
   background:#3498DB;
 }
-.jobinfo {
+.projbox:hover {
+  background:#34495E;
+}
+.jobinfo, .projinfo {
   display:none;
 }
-.job {
+.job, .proj {
   height:90px;
+}
+
+.left {
+  float:left;
+  width:50%;
+}
+.right {
+  float:left;
+  width:50%;
 }
 .self {
   width:200px;
@@ -341,7 +364,7 @@ hr:after {
 #footer {
   background:#ECF0F1;
   padding-bottom:20px;
-  color:#BDC3C7;
+  color:#7F8C8D;
 }
 .resume {
   position:absolute;
@@ -402,6 +425,17 @@ hr:after {
     }
     #buttonbox {
       margin-top:-25px;
+    }
+    .text1 {
+      float:none;
+    }
+    .left {
+      float:none;
+      width:100%;
+    }
+    .right {
+      float:none;
+      width:100%;
     }
 
 }

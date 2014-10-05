@@ -3,6 +3,10 @@ $(document).ready(function(){
   var job1 = true;
   var job2 = true;
   var job3 = true;
+  var proj1 = true;
+  var proj2 = true;
+  var proj3 = true;
+  var proj4 = true;
   $('.menu_icon').click(function() {
     if (clicks) {
       $('.mobile_menu').slideDown();
@@ -45,8 +49,50 @@ $(document).ready(function(){
       job3 = true;
     }
   });
-
-
+  $('.proj1').click(function() {
+    if (proj1) {
+      $('.proj1info').slideDown();
+      $('.proj1').css('background','#34495E');
+      proj1 = false;
+    } else {
+      $('.proj1info').slideUp();
+      $('.proj1').css('background','');
+      proj1 = true;
+    }
+  });
+  $('.proj2').click(function() {
+    if (proj2) {
+      $('.proj2info').slideDown();
+      $('.proj2').css('background','#34495E');
+      proj2 = false;
+    } else {
+      $('.proj2info').slideUp();
+      $('.proj2').css('background','');
+      proj2 = true;
+    }
+  });
+  $('.proj3').click(function() {
+    if (proj3) {
+      $('.proj3info').slideDown();
+      $('.proj3').css('background','#34495E');
+      proj3 = false;
+    } else {
+      $('.proj3info').slideUp();
+      $('.proj3').css('background','');
+      proj3 = true;
+    }
+  });
+  $('.proj4').click(function() {
+    if (proj4) {
+      $('.proj4info').slideDown();
+      $('.proj4').css('background','#34495E');
+      proj4 = false;
+    } else {
+      $('.proj4info').slideUp();
+      $('.proj4').css('background','');
+      proj4 = true;
+    }
+  });
 
 
 });

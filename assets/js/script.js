@@ -93,6 +93,38 @@ $(document).ready(function(){
       proj4 = true;
     }
   });
+  $('.more1').click(function() {
+    $('#box3').slideUp();
+    $('#boxtyrant').delay(500).slideDown();
+  });
+  $('.less1').click(function() {
+    $('#boxtyrant').slideUp();
+    $('#box3').delay(500).slideDown();
+  });
+  $('.more2').click(function() {
+    $('#box3').slideUp();
+    $('#box2048').delay(500).slideDown();
+  });
+  $('.less2').click(function() {
+    $('#box2048').slideUp();
+    $('#box3').delay(500).slideDown();
+  });
+  $('.more3').click(function() {
+    $('#box3').slideUp();
+    $('#boxdata').delay(500).slideDown();
+  });
+  $('.less3').click(function() {
+    $('#boxdata').slideUp();
+    $('#box3').delay(500).slideDown();
+  });
+  $('.more4').click(function() {
+    $('#box3').slideUp();
+    $('#boxninth').delay(500).slideDown();
+  });
+  $('.less4').click(function() {
+    $('#boxninth').slideUp();
+    $('#box3').delay(500).slideDown();
+  });
 
 
 });

@@ -443,6 +443,9 @@ hr:after {
   color:#3498DB;
   background:white;
 }
+.video {
+  margin:auto;
+}
 .self {
   width:200px;
   margin:auto;

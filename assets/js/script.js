@@ -7,6 +7,7 @@ $(document).ready(function(){
   var proj2 = true;
   var proj3 = true;
   var proj4 = true;
+  var video = true;
   $('.menu_icon').click(function() {
     if (clicks) {
       $('.mobile_menu').slideDown();
@@ -124,6 +125,16 @@ $(document).ready(function(){
   $('.less4').click(function() {
     $('#boxninth').slideUp();
     $('#box3').delay(500).slideDown();
+  });
+
+  $('.vidbutton').click(function() {
+    if (video == true) {
+      $('.video').slideDown();
+      video = false;
+    } else {
+      $('.video').slideUp();
+      video = true;
+    }
   });
 
 

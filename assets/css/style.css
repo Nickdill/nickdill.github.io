@@ -510,6 +510,10 @@ hr:after {
   border-radius:3px;
   border:3px solid white;
 }
+.social {
+  height:40px;
+  display:inline-block;
+}
 #footer {
   background:#ECF0F1;
   padding-bottom:20px;
@@ -528,7 +532,7 @@ hr:after {
   border-radius:5px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1800px) {
     #fixed_header {
       height:50px;
     }

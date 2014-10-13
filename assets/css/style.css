@@ -384,11 +384,13 @@ hr:after {
   padding:0px 30px;
   margin:20px auto;
   border-radius:3px;
+  transition:.7s;
 }
 .projbox {
   background:#3498DB;
   padding:0px 30px;
   margin:20px auto;
+  transition:.7s;
 }
 .jobbox:hover {
   background:#3498DB;
@@ -522,16 +524,14 @@ hr:after {
 .resume {
   position:absolute;
   color:#2c3e50;
-  text-align:center;
-  padding:100px 0px;
-  left:50%;
-  margin: 100px 0px 0px -200px;
-  width:400px;
-  height:200px;
-  background:#bdc3c7;
+  padding:100px 50px;
+  background:white;
   border-radius:5px;
 }
-
+.r_title {
+  text-align:center;
+  font-size:200%;
+}
 @media (max-width: 1800px) {
     #fixed_header {
       height:50px;

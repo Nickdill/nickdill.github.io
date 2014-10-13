@@ -17,6 +17,10 @@ $(document).ready(function(){
       clicks = true;
     }
   });
+  $('.m_menu').click(function() {
+    $('.mobile_menu').slideUp();
+    clicks = true;
+  });
   $('.job1').click(function() {
     if (job1) {
       $('.job1info').slideDown();

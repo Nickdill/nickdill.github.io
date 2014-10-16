@@ -592,3 +592,9 @@ hr:after {
     }
 
 }
+@media (max-width: 500px) {
+    .job, .proj {
+      height:60px;
+    }
+
+}

@@ -590,6 +590,9 @@ hr:after {
       float:none;
       width:100%;
     }
+    .key {
+      display: none;
+    }
 
 }
 @media (max-width: 500px) {

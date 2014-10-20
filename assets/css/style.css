@@ -599,5 +599,8 @@ hr:after {
     .job, .proj {
       height:60px;
     }
+    .key {
+      display: none;
+    }
 
 }

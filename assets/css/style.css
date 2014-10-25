@@ -241,14 +241,14 @@ a.a_top {
 }
 #boxdata {
   display:none;
-  background:#1abc9c;
+  background:#9b59b6;
 }
 #boxdata:after {
   position: absolute;
   content: "";
   width: 0;
   height: 0;
-  border-top: 20px solid #1abc9c;
+  border-top: 20px solid #9b59b6;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   left: 50%;
@@ -373,6 +373,24 @@ hr:after {
   bottom: -14px;
   z-index: 20;
 }
+#desbox {
+    background:#1abc9c;
+    color:white;
+    padding-bottom:70px;
+}
+#desbox:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid #1abc9c;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  left: 50%;
+  margin-left:-20px;
+  bottom: -14px;
+  z-index: 20;
+}
 #exp {
   text-align:center;
   font-size:300%;
@@ -455,11 +473,11 @@ hr:after {
 }
 .less3 {
   color:white;
-  background:#16a085;
+  background:#8e44ad;
 }
 .less3:hover {
   background:white;
-  color:#16a085;
+  color:#8e44ad;
 }
 .less4 {
   background:#c0392b;
@@ -516,88 +534,91 @@ hr:after {
   height:40px;
   display:inline-block;
 }
+.counter {
+    display: none;
+}
 #footer {
-  background:#ECF0F1;
-  padding-bottom:20px;
-  color:#7F8C8D;
+    background:#ECF0F1;
+    padding-bottom:20px;
+    color:#7F8C8D;
 }
 .resume {
-  position:absolute;
-  color:#2c3e50;
-  padding:100px 50px;
-  background:white;
-  border-radius:5px;
+    position:absolute;
+    color:#2c3e50;
+    padding:100px 50px;
+    background:white;
+    border-radius:5px;
 }
 .r_title {
-  text-align:center;
-  font-size:200%;
+    text-align:center;
+    font-size:200%;
 }
 @media (max-width: 1800px) {
     #fixed_header {
-      height:50px;
+        height:50px;
     }
     #hdr {
-      width:100px;
+        width:100px;
     }
     #initials {
-      padding-top:7px;
-      font-size:150%;
+        padding-top:7px;
+        font-size:150%;
     }
     #hdr_title {
-      font-size:1em;
-      padding-top:13px;
-      left:120px;
+        font-size:1em;
+        padding-top:13px;
+        left:120px;
     }
     .menu {
-      padding-top:13px;
+        padding-top:13px;
     }
     a.a_top {
-      position: relative;
-      top:-50px;
-      display: block;
-      height: 0;
-      width:0;
+        position: relative;
+        top:-50px;
+        display: block;
+        height: 0;
+        width:0;
     }
     #resume {
-      margin-top:50px;
+        margin-top:50px;
     }
 
 }
 @media (max-width: 780px) {
     .desk {
-      display:none;
+        display:none;
     }
     .menu {
-      display:none;
+        display:none;
     }
     .hide {
-      display:none;
+        display:none;
     }
     .menu_icon{
-      display:block;
+        display:block;
     }
     #buttonbox {
-      margin-top:-25px;
+        margin-top:-25px;
     }
     .text1 {
-      float:none;
+        float:none;
     }
     .left {
-      float:none;
-      width:100%;
+        float:none;
+        width:100%;
     }
     .right {
-      float:none;
-      width:100%;
+        float:none;
+        width:100%;
     }
 
 }
 @media (max-width: 500px) {
     .job, .proj {
-      height:75px;
+        height:75px;
     }
     .key {
-      display: none;
+        display: none;
     }
 
 }

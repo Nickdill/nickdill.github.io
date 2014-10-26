@@ -141,7 +141,7 @@ $(document).ready(function(){
         }
     });
 
-    $('.secretCounter').click(function() {
+    $('#secretCounter').click(function() {
         $('.counter').slideDown();
     });
 

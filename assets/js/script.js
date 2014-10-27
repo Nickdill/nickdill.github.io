@@ -21,6 +21,24 @@ $(document).ready(function(){
         $('.mobile_menu').slideUp();
         clicks = true;
     });
+
+    var mywindow = $(window);
+    var mypos = mywindow.scrollTop();
+    var up = false;
+    var newscroll;
+    mywindow.scroll(function () {
+        newscroll = mywindow.scrollTop();
+        if (newscroll > mypos && !up) {
+            $('#main').stop().fadeIn();
+            up = !up;
+            console.log(up);
+        } else if(newscroll < mypos && up) {
+            $('#main').stop().fadeOut();
+            up = !up;
+        }
+        mypos = newscroll;
+    });
+
     $('.job1').click(function() {
         if (job1) {
             $('.job1info').slideDown();

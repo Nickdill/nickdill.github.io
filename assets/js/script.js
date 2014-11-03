@@ -160,7 +160,7 @@ $(document).ready(function(){
     });
 
     $('#secretCounter').click(function() {
-        $('.counter').slideDown();
+        $('.counter').slideUp();
     });
 
 });

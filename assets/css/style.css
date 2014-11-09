@@ -4,7 +4,7 @@ body, html {
   line-height: 1.4;
   color: #34495E;
   cursor:default;
-  font-family: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 body {
   background: grey;
@@ -19,13 +19,29 @@ a:hover,
 a:active {
     text-decoration: none;
 }
-#fixed_header {
-  height:100px;
-  width:100%;
-  position:fixed;
-  top:0;
-  z-index:100;
-  box-shadow: 0px 0px 5px;
+#hire {
+    position: fixed;
+    top:10px;
+    right:10px;
+    border: 1px solid white;
+    padding:10px 30px;
+    border-radius: 3px;
+    transition:.5s;
+}
+#hire:hover {
+    background: #1abc9c;
+    border: #1abc9c 1px solid;
+}
+#nav_bar {
+    height:100px;
+    width:100%;
+    margin-top:-5px;
+}
+.navbar-fixed {
+    position: fixed;
+    top:5px;
+    z-index:100;
+    width:100%;
 }
 #header {
   position:relative;
@@ -67,7 +83,6 @@ a:active {
   text-align:center;
   transition:.7s;
   color:white;
-
 }
 .menu_icon {
   position:absolute;
@@ -80,6 +95,22 @@ a:active {
 }
 .menu_icon:hover {
   background:#ECF0F1;
+}
+.clearnav {
+    width:100%;
+    margin-left:30px;
+}
+.clearmenu {
+    position: relative;
+    text-align:center;
+    padding-top:21px;
+    margin-right:30px;
+    float:left;
+    transition:.3s;
+    color: rgba(255,255,255,0.5);
+}
+.clearmenu:hover {
+    color: rgba(255,255,255,1);
 }
 .menu {
   text-align:center;
@@ -111,7 +142,7 @@ a:active {
 }
 #main {
   position:fixed;
-  top:50px;
+  top:0px;
 }
 .key {
   width:110%;
@@ -121,7 +152,7 @@ a:active {
   position:relative;
   display:inline-block;
   width:100%;
-  background:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.5);
   color:white;
 }
 #first_box:after {
@@ -157,8 +188,9 @@ a:active {
   text-align:center;
   width:100px;
   padding:15px;
-  background: #3498DB;
+  background: rgba(52,152,219,0.6);
   border-radius:5px;
+  transition:.5s;
 }
 .download2 {
   position: absolute;
@@ -166,8 +198,10 @@ a:active {
   text-align:center;
   width:100px;
   padding:15px;
-  background: #3498DB;
+  background: rgba(52,152,219,0.6);
   border-radius:5px;
+  transition:.5s;
+
 }
 .download3 {
   text-align:center;
@@ -180,11 +214,11 @@ a:active {
 }
 .download:hover, .download2:hover, .download3:hover {
   cursor:pointer;
-  background:#2980B9;
+  background: rgba(52,152,219,1);
   transistion:.5s;
 }
 .container {
-  margin-top:-5px;
+  margin-top:0px;
   position:relative;
   width:100%;
 }
@@ -193,6 +227,7 @@ a:active {
 }
 #aboutbox {
   background:white;
+  padding-top:50px;
   padding-bottom:70px;
 }
 #aboutbox:after {
@@ -553,7 +588,7 @@ hr:after {
     font-size:200%;
 }
 @media (max-width: 1800px) {
-    #fixed_header {
+    #nav_bar {
         height:50px;
     }
     #hdr {

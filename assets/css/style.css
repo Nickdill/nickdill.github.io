@@ -1,6 +1,8 @@
 body, html {
   margin:0;
   font-size: 1em;
+  height: 100%;
+  width: 100%;
   line-height: 1.4;
   color: #34495E;
   cursor:default;
@@ -19,10 +21,24 @@ a:hover,
 a:active {
     text-decoration: none;
 }
+.diety {
+    transition:1s;
+}
+.pagetrans {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1000;
+    background:rgba(52,152,219,0.3);
+    transition:1s;
+    display:none;
+}
 #hire {
     position: fixed;
     top:10px;
-    right:10px;
+    right:20px;
     border: 1px solid white;
     padding:10px 30px;
     border-radius: 3px;
@@ -148,6 +164,32 @@ a:active {
   width:110%;
   z-index:-50;
 }
+
+.cd-fixed-bg {
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("assets/images/yellow.jpeg");
+}
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("assets/images/coast.jpeg");
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("assets/images/front.jpeg");
+}
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("assets/images/peace.jpeg");
+}
+
+.cd-scrolling-bg {
+    min-height: 100%;
+}
+
 #first_box {
   position:relative;
   display:inline-block;
@@ -188,7 +230,7 @@ a:active {
   text-align:center;
   width:100px;
   padding:15px;
-  background: rgba(52,152,219,0.6);
+  background: rgba(52,152,219,0.8);
   border-radius:5px;
   transition:.5s;
 }
@@ -198,7 +240,7 @@ a:active {
   text-align:center;
   width:100px;
   padding:15px;
-  background: rgba(52,152,219,0.6);
+  background: rgba(52,152,219,0.8);
   border-radius:5px;
   transition:.5s;
 
@@ -348,6 +390,7 @@ a.a_top {
   padding:50px 0px;
   font-weight:300;
 }
+
 #contacts {
   text-align:center;
   font-size:300%;
@@ -424,6 +467,51 @@ hr:after {
   margin-left:-20px;
   bottom: -14px;
   z-index: 20;
+}
+.box {
+    width: 100%;
+    height: 360px;
+}
+.sunrise {
+    position: absolute;
+    background:  url(../../assets/images/city.jpg) no-repeat;
+    background-size: 90% auto;
+    background-position: center right;
+    border:#1abc9c 4px solid;
+}
+.slider {
+    width: 58%;
+    overflow: hidden;
+    display: inline-block;
+    transform: skewX(20deg);
+    transition: width 1.2s ease-in-out;
+}
+.sunset {
+    /* skew back by negative of parent’s skew so contents is upright */
+    transform: skewX(-20deg);
+    margin-left: 65px; /* give margin to push content away from left slanted edge */
+   background: url(../../assets/images/prog.jpg) no-repeat;
+   background-size: 1080px auto;
+   background-position: center left;
+   pointer-events: auto;
+}
+.slider {
+    /* give negative margin to remove gap caused by left hand skew */
+    margin-left: -70px;
+    pointer-events: none;
+    transition:.5s;
+    border:#1abc9c 4px solid;
+}
+.slider:hover {
+    width: 80%;
+}
+.sunrise:hover + .slider {
+    width: 30%;
+}
+.darken {
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.2);
 }
 #exp {
   text-align:center;
@@ -569,7 +657,6 @@ hr:after {
   display:inline-block;
 }
 .counter {
-    display: none;
 }
 #footer {
     background:#ECF0F1;
@@ -586,6 +673,40 @@ hr:after {
 .r_title {
     text-align:center;
     font-size:200%;
+}
+.hirebox {
+    width:480px;
+    height:550px;
+    background:#273238; /*#22313F;*/
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-left:-240px;
+    margin-top:-275px;
+    border-radius:5px;
+    display:none;
+}
+#hiretop {
+    background: #7FCBC3; /*#1abc9c8;*/
+    width:100%;
+    height:50px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    color:rgba(255,255,255,0.7);
+    text-align:center;
+    vertical-align: bottom;
+}
+#hiretitle {
+    padding-top:10px;
+    font-size:20px;
+}
+.hirechoice {
+    width:460px;
+    height:138px;
+    margin: 0px auto;
+    background: #3E4E54;
+    margin-top:20px;
+    border-radius:5px;
 }
 @media (max-width: 1800px) {
     #nav_bar {

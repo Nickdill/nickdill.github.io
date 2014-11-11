@@ -505,9 +505,8 @@ hr:after {
 .slider:hover {
     width: 80%;
 }
-.slider:hover #des_circ {
-
-    color: rgba(255,255,255,0.8);
+.sunrise:hover + .slider {
+    width:30%;
 }
 .darken {
     width:100%;

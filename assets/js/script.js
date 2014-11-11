@@ -40,7 +40,7 @@ $(document).ready(function(){
         $('.diety').css('-ms-filter', 'blur(0px)');
         $('.diety').css('filter', 'blur(0px)');
         $('.pagetrans').css('display','none');
-    })
+    });
     $(window).scroll(function () {
         if ($(window).scrollTop() > $('#first_box').height()) {
             $('#nav_bar').addClass('navbar-fixed');

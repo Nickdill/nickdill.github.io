@@ -490,7 +490,7 @@ hr:after {
     /* skew back by negative of parent’s skew so contents is upright */
     transform: skewX(-20deg);
     margin-left: 65px; /* give margin to push content away from left slanted edge */
-   background: url(../../assets/images/prog.jpg) no-repeat;
+   background: url(../../assets/images/yellow.jpeg) no-repeat;
    background-size: 1080px auto;
    background-position: center left;
    pointer-events: auto;
@@ -529,15 +529,6 @@ hr:after {
     bottom:20px;
     text-overflow: ellipsis;
     white-space: nowrap;
-
-    /*position:absolute;
-    left:50px;
-    top:50%;
-    margin-top: -125px;
-    background: white;
-    border-radius:100%;
-    width:250px;
-    height:250px;*/
 }
 #exp {
   text-align:center;
@@ -702,7 +693,6 @@ hr:after {
 }
 .hirebox {
     width:480px;
-    background:#273238; /*#22313F;*/
     position:fixed;
     top:50%;
     left:50%;
@@ -741,6 +731,14 @@ hr:after {
     #resume {
         margin-top:50px;
     }
+}
+@media (max-width: 1200px) {
+    #des_circ {
+        font-size:50px;
+    }
+    #des_circ2 {
+        font-size:50px;
+    }
 
 }
 @media (max-width: 780px) {
@@ -769,6 +767,12 @@ hr:after {
     .right {
         float:none;
         width:100%;
+    }
+
+}
+@media (max-width: 640px) {
+    .clearmenu {
+        display:none;
     }
 
 }

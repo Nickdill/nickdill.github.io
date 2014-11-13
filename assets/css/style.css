@@ -44,7 +44,16 @@ a:active {
     border-radius: 3px;
     transition:.5s;
 }
-#hire:hover {
+#hire2 {
+    border: 1px solid white;
+    padding:10px 30px;
+    border-radius: 3px;
+    transition:.5s;
+    width:80px;
+    margin:auto;
+    background: rgba(0,0,0,0.1);
+}
+#hire:hover, #hire2:hover {
     background: #1abc9c;
     border: #1abc9c 1px solid;
 }
@@ -165,32 +174,6 @@ a:active {
   width:110%;
   z-index:-50;
 }
-
-.cd-fixed-bg {
-    min-height: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.cd-fixed-bg.cd-bg-1 {
-  background-image: url("assets/images/yellow.jpeg");
-}
-.cd-fixed-bg.cd-bg-2 {
-  background-image: url("assets/images/coast.jpeg");
-}
-.cd-fixed-bg.cd-bg-3 {
-  background-image: url("assets/images/front.jpeg");
-}
-.cd-fixed-bg.cd-bg-4 {
-  background-image: url("assets/images/peace.jpeg");
-}
-
-.cd-scrolling-bg {
-    min-height: 100%;
-}
-
 #first_box {
   position:relative;
   display:inline-block;
@@ -381,9 +364,10 @@ a.a_top {
   z-index: 10;
 }
 #box4 {
-  background:#7F8C8D;
+  width:100%;
   padding-bottom:70px;
   color:white;
+  background:rgba(0,0,0,.5);
 }
 #about {
   text-align:center;
@@ -695,6 +679,7 @@ hr:after {
 .hirebox {
     width:480px;
     height:200px;
+    background: rgba(0,0,0,0);
     position:fixed;
     top:50%;
     left:50%;

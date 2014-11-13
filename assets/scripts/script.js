@@ -8,6 +8,9 @@ $(document).ready(function(){
     var proj3 = true;
     var proj4 = true;
     var video = true;
+
+    var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+
     $('.menu_icon').click(function() {
         if (clicks) {
             $('.mobile_menu').slideDown();
@@ -31,6 +34,16 @@ $(document).ready(function(){
         $('.diety').css('-ms-filter', 'blur(7px)');
         $('.diety').css('filter', 'blur(7px)');
     });
+    $('#hire2').click(function() {
+        $('.hirebox').css('display', 'block');
+        $('.pagetrans').css('display','block');
+        $('.pagetrans').animate({opacity:'1'},"fast");
+        $('.diety').css('-webkit-filter', 'blur(7px)');
+        $('.diety').css('-moz-filter', 'blur(7px)');
+        $('.diety').css('-o-filter', 'blur(7px)');
+        $('.diety').css('-ms-filter', 'blur(7px)');
+        $('.diety').css('filter', 'blur(7px)');
+    });
     $('.pagetrans').click(function() {
         $('.hirebox').css('display', 'none');
         $('.pagetrans').animate({opacity:'0'},"fast");
@@ -45,6 +58,7 @@ $(document).ready(function(){
         if ($(window).scrollTop() > $('#first_box').height()) {
             $('#nav_bar').addClass('navbar-fixed');
             $('.key').css('display', 'none');
+            $('#hire').css('display', 'none');
         }
         if ($(window).scrollTop() < 50) {
             $('#nav_bar').css('color','white');
@@ -53,7 +67,14 @@ $(document).ready(function(){
         }
         if ($(window).scrollTop() < $('#first_box').height()) {
             $('#nav_bar').removeClass('navbar-fixed');
+            $('#hire').css('display', 'block');
             $('.key').css('display', 'block');
+            $('.key').attr('src', 'assets/images/gate.jpg');
+        }
+        var contheight = $('#first_box').height() + $('#aboutbox').height() + $('#expbox').height() + $('#box3').height();
+        if ($(window).scrollTop() > contheight) {
+            $('.key').css('display', 'block');
+            $('.key').attr('src', 'assets/images/front.jpeg');
         }
     });
 

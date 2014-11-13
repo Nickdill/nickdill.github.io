@@ -52,6 +52,7 @@ a:active {
     height:100px;
     width:100%;
     margin-top:-5px;
+    color:white;
 }
 .navbar-fixed {
     position: fixed;
@@ -491,7 +492,7 @@ hr:after {
     transform: skewX(-20deg);
     margin-left: 65px; /* give margin to push content away from left slanted edge */
    background: url(../../assets/images/yellow.jpeg) no-repeat;
-   background-size: 1080px auto;
+   background-size: 1600px auto;
    background-position: center left;
    pointer-events: auto;
 }
@@ -693,6 +694,7 @@ hr:after {
 }
 .hirebox {
     width:480px;
+    height:200px;
     position:fixed;
     top:50%;
     left:50%;

@@ -198,6 +198,11 @@ $(document).ready(function(){
         }
     });
 
+    $(".darken").click(function(){
+        window.location=$(this).find("a").attr("href");
+        return false;
+    });
+
     $('#secretCounter').click(function() {
         $('.counter').slideUp();
     });

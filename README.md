@@ -1,3 +1,9 @@
+# [Nicholas Dill][site]
+
+My personal website. I think it's pretty neat.
+
+[site]: http://nicholasdill.com
+
 nicholasdill.com
 ==================
 Welcome! Thanks for checking out my personal website!

@@ -277,7 +277,7 @@ a.a_top {
   width:0;
 
 }
-#box3, #box2048, #boxtyrant, #boxdata, #boxninth {
+#box3, #box2048, #boxtyrant, #boxdata, #boxninth, #boxholdem, #boxjump {
   background:#3498DB;
   padding-bottom:70px;
   color:white;
@@ -343,6 +343,40 @@ a.a_top {
   width: 0;
   height: 0;
   border-top: 20px solid #2ecc71;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  left: 50%;
+  margin-left:-20px;
+  bottom: -14px;
+  z-index: 10;
+}
+#boxholdem {
+  display:none;
+  background:#e74c3c;
+}
+#boxholdem:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid #e74c3c;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  left: 50%;
+  margin-left:-20px;
+  bottom: -14px;
+  z-index: 10;
+}
+#boxjump {
+  display:none;
+  background:#e74c3c;
+}
+#boxjump:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid #e74c3c;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   left: 50%;
@@ -555,7 +589,7 @@ hr:after {
   float:left;
   width:50%;
 }
-.more1, .more2, .more3, .more4 {
+.more1, .more2, .more3, .more4, .more5, .more6 {
   padding:10px;
   width:50px;
   background:red;
@@ -565,12 +599,12 @@ hr:after {
   text-align:center;
   transition:.5s;
 }
-.more1:hover, .more2:hover, .more3:hover, .more4:hover {
+.more1:hover, .more2:hover, .more3:hover, .more4:hover, .more5:hover, .more6:hover {
   transition:.5s;
   color:#3498DB;
   background:white;
 }
-.less1, .less2, .less3, .less4 {
+.less1, .less2, .less3, .less4, .less5, .less6 {
   padding:10px;
   width:60px;
   background:red;
@@ -582,7 +616,7 @@ hr:after {
   text-align: center;
   transition:.5s;
 }
-.less1:hover, .less2:hover, .less3:hover, .less4:hover {
+.less1:hover, .less2:hover, .less3:hover, .less4:hover, .less5:hover, .less6:hover {
   transition:.5s;
   color:#27ae60;
   background:white;
@@ -608,6 +642,22 @@ hr:after {
   color:white;
 }
 .less4:hover {
+  background:white;
+  color:#c0392b;
+}
+.less5 {
+  background:#c0392b;
+  color:white;
+}
+.less5:hover {
+  background:white;
+  color:#c0392b;
+}
+.less6 {
+  background:#c0392b;
+  color:white;
+}
+.less6:hover {
   background:white;
   color:#c0392b;
 }

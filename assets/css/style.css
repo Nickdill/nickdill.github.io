@@ -493,10 +493,11 @@ hr:after {
 }
 .sunrise {
     position: absolute;
+    
     background:  url(../../assets/images/city.jpg) no-repeat;
     background-size: 90% auto;
     background-position: center right;
-    border:#1abc9c 4px solid;
+    border-top:#1abc9c 4px solid;
 }
 .slider {
     width: 58%;

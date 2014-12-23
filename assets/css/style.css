@@ -9,7 +9,7 @@ body, html {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 body {
-  background: grey;
+  background: #1D1D1D;
 }
 a {
   color:inherit;
@@ -493,7 +493,7 @@ hr:after {
 }
 .sunrise {
     position: absolute;
-    
+
     background:  url(../../assets/images/city.jpg) no-repeat;
     background-size: 90% auto;
     background-position: center right;
@@ -782,6 +782,8 @@ hr:after {
 @media (max-width: 780px) {
     .desk {
         display:none;
+    }
+    .key {
     }
     .menu {
         display:none;

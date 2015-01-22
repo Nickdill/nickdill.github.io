@@ -73,7 +73,7 @@ $(document).ready(function(){
             $('.key').css('display', 'block');
             $('.key').attr('src', 'assets/images/gate.jpg');
         }
-        var contheight = $('#first_box').height() + $('#aboutbox').height() + $('#expbox').height() + $('#box3').height();
+        var contheight = $('#aboutbox').height() + $('#expbox').height() + $('#box3').height();
         if ($(window).scrollTop() > contheight) {
             $('.key').css('display', 'block');
             $('.key').attr('src', 'assets/images/front.jpeg');

@@ -3,6 +3,7 @@ $(document).ready(function(){
     var job1 = true;
     var job2 = true;
     var job3 = true;
+    var job4 = true;
     var proj1 = true;
     var proj2 = true;
     var proj3 = true;
@@ -70,13 +71,11 @@ $(document).ready(function(){
         if ($(window).scrollTop() < $('#first_box').height()) {
             $('#nav_bar').removeClass('navbar-fixed');
             $('#hire').css('display', 'block');
-            $('.key').css('display', 'block');
-            $('.key').attr('src', 'assets/images/gate.jpg');
+            $('#main').css('background-image', 'url(assets/images/city.jpg)');
         }
         var contheight = $('#aboutbox').height() + $('#expbox').height() + $('#box3').height();
         if ($(window).scrollTop() > contheight) {
-            $('.key').css('display', 'block');
-            $('.key').attr('src', 'assets/images/front.jpeg');
+            $('#main').css('background-image', 'url(assets/images/gate.jpg)');
         }
     });
 
@@ -111,6 +110,17 @@ $(document).ready(function(){
             $('.job3info').slideUp();
             $('.job3').css('background','');
             job3 = true;
+        }
+    });
+    $('.job4').click(function() {
+      if (job4) {
+            $('.job4info').slideDown();
+            $('.job4').css('background','#3498db');
+            job4 = false;
+        } else {
+            $('.job4info').slideUp();
+            $('.job4').css('background','');
+            job4 = true;
         }
     });
     $('.proj1').click(function() {

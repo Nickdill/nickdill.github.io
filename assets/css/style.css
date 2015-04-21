@@ -595,7 +595,7 @@ hr:after {
   float:left;
   width:50%;
 }
-.more1, .more2, .more3, .more4, .more5, .more6 {
+.more1, .more2, .more3, .more4, .more5, .more6, .vStormfell {
   padding:10px;
   width:50px;
   background:red;
@@ -605,7 +605,7 @@ hr:after {
   text-align:center;
   transition:.5s;
 }
-.more1:hover, .more2:hover, .more3:hover, .more4:hover, .more5:hover, .more6:hover {
+.more1:hover, .more2:hover, .more3:hover, .more4:hover, .more5:hover, .more6:hover, .vStormfell:hover {
   transition:.5s;
   color:#3498DB;
   background:white;

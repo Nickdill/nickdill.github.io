@@ -71,11 +71,6 @@ $(document).ready(function(){
         if ($(window).scrollTop() < $('#first_box').height()) {
             $('#nav_bar').removeClass('navbar-fixed');
             $('#hire').css('display', 'block');
-            $('#main').css('background-image', 'url(assets/images/city.jpg)');
-        }
-        var contheight = $('#aboutbox').height() + $('#expbox').height() + $('#box3').height();
-        if ($(window).scrollTop() > contheight) {
-            $('#main').css('background-image', 'url(assets/images/gate.jpg)');
         }
     });
 

@@ -327,14 +327,14 @@ a.a_top {
 }
 #boxninth {
   display:none;
-  background:#e74c3c;
+  background:#1abc9c;
 }
 #boxninth:after {
   position: absolute;
   content: "";
   width: 0;
   height: 0;
-  border-top: 20px solid #e74c3c;
+  border-top: 20px solid #1abc9c;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   left: 50%;
@@ -378,14 +378,14 @@ a.a_top {
 }
 #boxjump {
   display:none;
-  background:#e74c3c;
+  background:#f1c40f;
 }
 #boxjump:after {
   position: absolute;
   content: "";
   width: 0;
   height: 0;
-  border-top: 20px solid #e74c3c;
+  border-top: 20px solid #f1c40f;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   left: 50%;
@@ -648,28 +648,29 @@ hr:after {
   color:#8e44ad;
 }
 .less4 {
-  background:#c0392b;
+  background:#f39c12;
   color:white;
 }
 .less4:hover {
   background:white;
-  color:#c0392b;
+  color:#f39c12;
 }
 .less5 {
   background:#c0392b;
   color:white;
+  width: 100px;
 }
 .less5:hover {
   background:white;
   color:#c0392b;
 }
 .less6 {
-  background:#c0392b;
+  background:#16a085;
   color:white;
 }
 .less6:hover {
   background:white;
-  color:#c0392b;
+  color:#16a085;
 }
 .buttonrow {
   width:210px;
@@ -677,7 +678,7 @@ hr:after {
 }
 .storm_button {
   margin: auto;
-  background:#c0392b;
+  background:#16a085;
   color: white;
   width: 100px;
   padding: 10px 0px;
@@ -687,7 +688,11 @@ hr:after {
 }
 .storm_button:hover {
   background:white;
-  color:#c0392b;
+  color:#16a085;
+}
+.vStormfell {
+  background:#34495e;
+  color:white;
 }
 .video {
   width:100%;
@@ -715,6 +720,7 @@ hr:after {
 }
 .social {
   height:40px;
+  transition: .5s;
   display:inline-block;
 }
 .counter {
@@ -746,6 +752,13 @@ hr:after {
     margin-top:-275px;
     border-radius:5px;
     display:none;
+}
+.secret21 {
+  color: #3498DB
+}
+.social:hover {
+  background: #1abc9c;
+  border-radius: 100px;
 }
 
 @media (max-width: 1800px) {
